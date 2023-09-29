@@ -1,0 +1,118 @@
+<?php echo flash_message_success('status_msg'); ?>
+<?php echo flash_message_danger('status_msg_error'); ?>
+
+	<div class="row">
+		<div class="col-md-12 col-sm-12 col-xs-12">
+		
+			<?php echo form_open_multipart('prs_admin/edit_request_action/'.$y->id); ?>
+			
+				<div class="row">
+				
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						<h3>Request Details</h3>
+						<div class="form-group">
+							<label class="form-control-label">Purpose of request (e.g. Internet Subscription)</label>
+							<input type="text" name="purpose" id="purpose" value="<?php echo set_value('purpose', $y->purpose); ?>" class="form-control" required />
+							<div class="form-error"><?php echo form_error('purpose'); ?></div>
+						</div>
+						<div class="form-group">
+							<label class="form-control-label">Item(s) being requested </label>
+							<textarea type="text" name="items" id="items" class="form-control t100" required><?php echo set_value('items', strip_tags($y->items)); ?></textarea>
+							<div class="form-error"><?php echo form_error('items'); ?></div>
+						</div>
+						<div class="form-group">
+							<label class="form-control-label">Why is/are the item(s) needed? (be concise)</label>
+							<textarea type="text" name="items_info" class="form-control t100" required><?php echo set_value('items_info', strip_tags($y->items_info)); ?></textarea>
+							<div class="form-error"><?php echo form_error('items_info'); ?></div>
+						</div>
+						<div class="form-group">
+							<label class="form-control-label">How urgently is/are the item(s) needed? (e.g. 2 weeks)</label>
+							<input type="text" name="urgency" value="<?php echo set_value('urgency', $y->urgency); ?>" class="form-control" required />
+							<div class="form-error"><?php echo form_error('urgency'); ?></div>
+						</div>
+						<div class="form-group">
+							<label class="form-control-label">Amount (in digits)</label>
+							<div class="input-group">
+								<div class="input-group-addon"><span class="input-group-text"><?php echo s_currency_symbol; ?></span></div>
+								<input type="text" name="amount_digits" value="<?php echo set_value('amount_digits', $y->amount_digits); ?>" class="form-control numbers-only" id="amount_digits" required maxlength="15"/>
+								<div class="input-group-addon"><span class="input-group-text">.00</span></div>
+							</div>
+							<div class="form-error"><?php echo form_error('amount_digits'); ?></div>
+						</div>
+						<div class="form-group">
+							<label class="form-control-label">Amount (in words)</label>
+							<textarea type="text" name="amount_words" class="form-control t100" id="amount_words" readonly autocomplete="off"><?php echo set_value('amount_words'); ?></textarea>
+							<div class="form-error"><?php echo form_error('amount_words'); ?></div>
+						</div>
+					</div>
+				
+					<div class="col-md-6 col-sm-12 col-xs-12">
+						
+						<h3>Additional Content (optional)</h3>
+						<div class="form-group">
+							<?php 
+							if ($y->content == NULL) { ?>
+								<label class="form-control-label">Upload a file </label><br />
+							<?php } else { ?>
+								<label class="form-control-label">
+								File: <?php echo $y->content; ?> 
+								<a href="<?php echo base_url('prs_admin/delete_request_content/'.$y->id); ?>" title="Delete if a file is no longer required/necessary for this request"> &nbsp; Delete?</a> <br />
+								Change uploaded file?
+								</label><br />
+							<?php } ?>
+							<small>Only documents (PDF, Word, Excel, PowerPoint), image and zip files allowed (max 10MB).</small>
+							<input type="file" class="form-control" name="content" />
+							<div class="form-error"><?php echo $upload_error['error']; ?></div>
+						</div>
+						
+						<h3 class="m-t-30">Account Details</h3>
+						<div class="form-group">
+							<label class="form-control-label">Account Name</label>
+							<input type="text" name="acc_name" value="<?php echo set_value('acc_name', $y->acc_name); ?>" class="form-control" required />
+							<div class="form-error"><?php echo form_error('acc_name'); ?></div>
+						</div>
+						
+						<div class="form-group">
+							<label class="form-control-label">Account Number</label>
+							<input type="text" name="acc_number" value="<?php echo set_value('acc_number', $y->acc_number); ?>" class="form-control numbers-only" required maxlength="10" />
+							<div class="form-error"><?php echo form_error('acc_number'); ?></div>
+						</div>
+						
+						<?php 
+						//if installed country is Nigeria, show list of Nigerian banks in dropdown, else show textbox
+						if ( s_country == 'Nigeria') { ?>
+						
+							<div class="form-group">
+								<label class="form-control-label">Bank Name</label>
+								<select class="form-control" name="bank_name" required>
+									<option selected value="<?php echo $y->bank_name; ?>"><?php echo $y->bank_name; ?></option>	
+									<?php 
+									$banks = nigerian_banks();
+									sort($banks); //sort in ascending order
+									foreach ($banks as $index => $bank_name) { ?>
+										<option value="<?php echo $bank_name; ?>" <?php echo set_select('bank_name', $bank_name); ?> ><?php echo $bank_name; ?></option>
+									<?php } ?>
+								</select>
+								<div class="form-error"><?php echo form_error('bank_name'); ?></div>
+							</div>
+						
+						<?php } else { ?>
+						
+							<div class="form-group">
+								<label class="form-control-label">Bank Name</label>
+								<input type="text" name="bank_name" value="<?php echo set_value('bank_name', $y->bank_name); ?>" class="form-control" required />
+								<div class="form-error"><?php echo form_error('bank_name'); ?></div>
+							</div>
+							
+						<?php } ?>
+						
+						<div class="form-group">       
+							<input type="submit" value="Update Request" class="btn btn-lg btn-primary">
+						</div>
+					</div>
+					
+				</div>
+				
+			<?php echo form_close(); ?>				
+		</div>
+	</div>

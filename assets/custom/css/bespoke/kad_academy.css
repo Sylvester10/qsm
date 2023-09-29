@@ -1,0 +1,437 @@
+
+.kad_report_card {
+  width: 980px;
+  overflow-x: auto;
+  margin: auto;
+  color: #000;
+}
+.kad_report_card p {
+  color: #000;
+}
+.kad_report_card td {
+  border: 1px solid #000;
+  padding: 15px;
+  font-size: 17px;
+  text-align: center;
+}
+.kad_report_card table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.kad_report_card thead {
+  font-weight:bold;
+  text-align:center;
+}
+.kad_report_card th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 14px;
+  line-height: 20px;
+}
+.kad_report_card .align_left {
+  text-align: left;
+}
+.kad_report_card .report_data {
+  font-size: 17px;
+  border-bottom: 1px solid rgba(0,0,0,0.8);
+}
+
+
+.kad_report_card .report_table_header,
+.kad_report_card .report_table_footer,
+.kad_report_card .subject_scores_table {
+  width: 980px;
+  margin: auto;
+}
+.kad_report_card .report_table_header .report_header_title {
+  margin-left: -150px;
+}
+.kad_report_card .report_table_header .report_header_title h3 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.kad_report_card .vheader {
+  width: 0;
+  height: 200px;
+}
+
+
+.kad_report_card .rotate {
+  transform: rotate(270deg) translateX(-50px) translateY(2px);
+  white-space: nowrap;
+  max-width: 40px;
+  font-size: 17px;
+}
+.kad_report_card .rotate_first {
+  transform: rotate(270deg) translateX(-50px) translateY(-2px);
+  white-space: nowrap;
+  max-width: 40px;
+  font-size: 17px;
+}
+.kad_report_card .rotate_subjects {
+  transform: rotate(270deg) translateX(13px) translateY(-2px);
+  white-space: nowrap;
+  max-width: 40px;
+  font-size: 17px;
+}
+.kad_report_card .rotate_scores {
+  transform: rotate(270deg) translateX(-15px) translateY(-2px);
+  white-space: nowrap;
+  max-width: 40px;
+  font-size: 17px;
+}
+.kad_report_card .rotate_satisfatory {
+  transform: rotate(270deg) translateX(-35px) translateY(-2px);
+  white-space: nowrap;
+  max-width: 40px;
+  font-size: 17px;
+}
+.kad_report_card .rotate_improvement {
+  transform: rotate(270deg) translateX(-65px) translateY(-2px);
+  white-space: nowrap;
+  max-width: 40px;
+  font-size: 17px;
+}
+
+.kad_report_card .rotate_progress{
+  transform: rotate(270deg) translateX(-15px) translateY(-2px);
+  white-space: nowrap;
+  max-width: 40px;
+  font-size: 17px;
+}
+.kad_report_card .rotate_effort{
+  transform: rotate(270deg) translateX(-19px) translateY(-2px);
+  white-space: nowrap;
+  max-width: 40px;
+  font-size: 17px;
+}
+.kad_report_card .rotate_behavour{
+  transform: rotate(270deg) translateX(-30px) translateY(-2px);
+  white-space: nowrap;
+  max-width: 40px;
+  font-size: 17px;
+}
+.kad_report_card .rotate_assessment{
+  transform: rotate(270deg) translateX(-40px) translateY(-2px);
+  white-space: nowrap;
+  max-width: 40px;
+  font-size: 17px;
+}
+
+.kad_report_card .comment {
+  font-size: 17px;
+  min-width: 400px;  
+}
+
+.kad_report_card .subjects {
+  width: 150px;
+  font-weight: 400px;
+}
+
+
+/**Mid-term Pre_kg**/
+.kad_report_card .report_header_prekg {
+  width: 980px;
+  margin: auto;
+  border: 1px solid #000;
+  padding: 15px;
+}
+.kad_report_card .report_footer_prekg {
+  margin: auto;
+  padding: 15px;
+}
+.kad_report_card .child_logo img {
+  width: 100px;
+  height: auto;
+  margin-top: -60px;
+  margin-left: -25px;
+} 
+
+.kad_report_card .report_comment {
+  width: 490px;
+  min-height: 105px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.kad_report_card .info_comment {
+  width: 350px;
+  height: 105px;
+  border: 1px solid #000;
+  font-size: 12px;
+  color: black;
+  padding: 5px;
+}
+
+.kad_report_card .info_comment li {
+  text-align: left;
+  margin-left: -30px;  
+}
+
+.kad_report_card .cell_data {
+  font-size: 15px;
+  padding: 5px; 
+}
+
+.kad_report_card .report_header {
+  width: 905px;
+  height: 130px;
+  border: 1px solid #000;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.kad_report_card .report_head span {
+  margin: 0 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.8);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.kad_report_card .report_section_title span {
+  border-bottom: 2px solid #000;
+  font-weight: 600;
+}
+
+.kad_report_card .school-logo img {
+  width: 170px;
+  height: auto;
+  margin-top: -30px;
+}
+
+.kad_report_card .table_ li {
+  text-align: left;  
+}
+
+/**Template 3**/
+
+.kad_report_card .title {
+  margin-bottom: -20px;
+}
+
+.kad_report_card .title p {
+  color: black;
+  font-size: 30px;
+}
+
+
+/**Template 4**/
+
+.kad_report_card .student_info_template4 {
+}
+
+.kad_report_card .student_info_template4 th{
+  height: 37px;
+  width: 300px;
+  padding: 5px;
+}
+
+.kad_report_card .title_year1 span {
+  margin: 0 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.8);
+  font-size: 30px;
+}
+
+.kad_report_card .buttom_title span {
+  border-bottom: 1px solid rgba(0,0,0,0.8);
+  font-size: 20px;
+}
+
+.kad_report_card .year-1-logo img {
+  width: 250px;
+  height: auto;
+}
+
+.kad_report_card .year1_data2 th {
+  max-width: 450px;
+  max-height: -10px;
+  font-size: 15px;
+}
+
+.kad_report_card .year1_data th {
+  max-width: 450px;
+  max-height: -10px;
+  font-size: 15px;
+}
+
+.kad_report_card .year1_data td {
+  min-width: 300px;
+  max-height: -10px;
+  text-align: left;
+}
+
+.kad_report_card .table_mathematics {
+  width: 450px;
+}
+
+.kad_report_card .table_mathematics th {
+  min-width: 150px;
+  max-height: -10px;
+  font-size: 12px;
+}
+
+.kad_report_card .table_mathematics td {
+  text-align: left;;
+  max-height: -10px;
+  font-size: 15px;
+}
+
+/**Others**/
+
+.kad_report_card .footer {
+  text-align:right;
+  font-weight:bold;
+}
+
+.kad_report_card .report_data span {
+  margin: 0 8px;
+  border-bottom: 1px solid rgba(0,0,0,0.8);
+  font-size: 17px;
+}
+
+.kad_report_card .school_logo img {
+  width: 180px;
+  height: auto;
+}
+.kad_report_card .sec_school_logo img {
+  width: 480px;
+  height: auto;
+}
+.kad_report_card .sec_teacher_comment_box {
+  border: 2px solid rgba(0,0,0,0.8);
+  padding: 10px;
+}
+.kad_report_card .report_data_email {
+  color: #337ab7 !important;
+  border-bottom: 2px solid #337ab7;
+}
+.kad_report_card .watermark_logo_area {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.kad_report_card .watermark_logo_area .watermark_logo {
+  height: 480px;
+  width: auto;
+  opacity: 0.2;
+}
+.kad_report_card .watermark_logo_area .watermark_text_over {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.kad_report_card .sec_st_comment {
+  width: 550px;
+}
+
+.kad_report_card .table-border-top {
+  border-top: 1px solid #f2f2f2;
+  padding: 10px 0;
+}
+
+.kad_report_card .hide_border_top {
+  border-top: hidden;
+}
+.kad_report_card .hide_border_right {
+  border-right: hidden;
+}
+.kad_report_card .hide_border_bottom {
+  border-bottom: hidden;
+}
+.kad_report_card .hide_border_left {
+  border-left: hidden;
+}
+.kad_report_card .hide_border_top_left {
+  border-top: hidden !important;
+  border-left: hidden !important;
+}
+
+.kad_report_card .report_signature {
+  width: 110px;
+  height: auto;
+}
+.kad_report_card .report_signature_sm {
+  width: 85px;
+  height: auto;
+}
+
+
+.kad_report_card table.report_header_info {
+  border-top: 3px solid rgba(0,0,0,0.8);
+  margin-top: 10px;
+}
+.kad_report_card table.report_header_info tr td {
+  text-align: left;
+  padding: 7px;
+}
+
+.kad_report_card table.report_legend_info {
+  border-top: 1px solid rgba(0,0,0,0.8);
+}
+.kad_report_card table.report_legend_info tr td {
+  text-align: left;
+  padding: 3px;
+  font-size: 13px;
+}
+.kad_report_card .year_3_6_legend_info {
+   border-top: 1px solid rgba(0,0,0,0.8);
+   margin-top: 20px;
+}
+
+.kad_report_card tr.year_3_6_legend td {
+  font-size: 13px;
+}
+
+.kad_report_card .f_p_subject_scores_table {
+  border-top: 1px solid rgba(0,0,0,0.8);
+  margin-bottom: 5px;
+}
+.kad_report_card .f_p_subject_scores_table tr td {
+  padding: 4px;
+  font-size: 14px;
+}
+.kad_report_card .f_p_subject_scores_table .subject_name {
+  width: 370px;
+  text-align: left;
+}
+.kad_report_card .y_3_6_subject_scores_table {
+  border-top: hidden;
+  margin-bottom: 0;
+}
+.kad_report_card .y_3_6_subject_scores_table tr td {
+  padding: 4px;
+  font-size: 14px;
+}
+.kad_report_card .y_3_6_subject_scores_table tr td.term_data_cell {
+  width: 40px;
+}
+.kad_report_card .y_3_6_subject_scores_table .subject_name {
+  width: 350px;
+  text-align: left;
+}
+
+.kad_report_card .t_left {
+  margin-left: -7px;
+}
+.kad_report_card .t_right {
+  margin-left: 7px;
+}
+.kad_report_card .extra_heading span {
+  border-bottom: 2px solid #000;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.kad_report_card .report_table_extra {
+  border-top: 1px solid rgba(0,0,0,0.8);
+}
+.kad_report_card .report_table_extra tr td {
+  padding: 4px;
+  font-size: 14px;
+}
+
+.kad_report_card table thead tr th,
+.kad_report_card table tbody tr td {
+  border-top: 1px solid rgba(0,0,0,0.8);
+  border-bottom: 1px solid rgba(0,0,0,0.8);
+}

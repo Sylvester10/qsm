@@ -1,0 +1,118 @@
+ul.home_links {
+	margin-left: -25px
+}
+ul.home_links li {
+	display: inline-block;
+}
+
+
+ul.home_links_super_admin {
+	margin-left: -55px;
+	margin-top: 30px;
+}
+ul.home_links_super_admin li {
+	display: inline-block;
+}
+
+.install-banner {
+	width: 100%;
+	height: auto;
+}
+
+
+.payment_logo {
+	width: 209px;
+	height: auto;
+	display: inline-block;
+}
+
+.payment_logo_other {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+}
+
+
+.login-background {
+	background-image: url(../images/login-bg.jpg); 
+	background-repeat: repeat; 
+	background-size: cover;
+}
+
+input.captcha {
+	background: #e9ecef; 
+	display: inline-block; 
+	border: none; 
+	outline: none; 
+	width: 100px;
+	text-align: center;
+}
+.login-page-margin {
+	margin-top: 50px;
+}
+.login-page-title {
+	text-align: center;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 500;
+	margin-left: -7px;
+	margin-bottom: 30px;
+}
+.panel.login-box {
+	border-radius: 5px;
+}
+.d-login-msg {
+	margin-bottom: 20px; 
+	display: none;
+}
+.login-btn {
+	background: #cc0821;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	font-weight: 500;
+}
+.login-btn:hover {
+	background: #cc0821;
+	opacity: 0.90;
+	color: #fff;
+	border: none;
+}
+.login-extra {
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+
+.switch-user a,
+.form-holder a {
+	text-decoration: none;
+}
+.switch-user ul {
+	border-bottom: none;
+}
+.switch-user ul li {
+	border-radius: 3px;
+	display: inline-block;
+	margin-left: 15px;
+	padding: 15px;
+	border: 1px solid #f2f2f2;
+	border-bottom: none;
+}
+.switch-user ul li:hover {
+	background: #F7F7F7;
+	color: #000;
+}
+.switch-user .tab-content h3 {
+	margin-top: -20px;
+	margin-bottom: -20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+/* 
+This style helps with style elements on print preview
+*/
+
+@media print {
+	
+	/* Report Template 1 */
+	.report_categories .cat_header .cat_letter {
+		background-color: #000 !important;
+		border: 3px solid rgb(0,0,0);
+		color: #fff !important;
+		-webkit-print-color-adjust: exact; 
+		color-adjust: exact; 
+	}
+	.report_categories .cat_header .cat_title {
+		background-color: rgb(79,129,189) !important;
+		border: 3px solid rgb(56,93,138);	
+		color: #fff !important;
+		-webkit-print-color-adjust: exact; 
+		color-adjust: exact; 
+	}
+
+	/* Report Broadsheet */
+	.broadsheet_table .subject_score_red {
+		color: red !important;
+		-webkit-print-color-adjust: exact; 
+		color-adjust: exact; 
+	}
+	.broadsheet_extra .morris_line_legend:nth-child(1) > i {
+		color: #373651 !important;
+		-webkit-print-color-adjust: exact; 
+		color-adjust: exact; 
+	}
+	.broadsheet_extra .morris_line_legend:nth-child(2) > i {
+		color: #E65A26 !important;
+		-webkit-print-color-adjust: exact; 
+		color-adjust: exact; 
+	}
+	.broadsheet_extra .morris_line_legend:nth-child(3) > i {
+		color: #26B99A !important;
+		-webkit-print-color-adjust: exact; 
+		color-adjust: exact; 
+	}
+
+
+}
